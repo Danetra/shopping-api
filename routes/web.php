@@ -20,3 +20,8 @@ $router->get('/', function () use ($router) {
 $router->get('/user', 'UserController@index');
 
 $router->post('/register', 'UserController@register');
+
+$router->get('/shopping', 'ShoppingController@index');
+
+$router->post('/shopping/create', 'ShoppingController@create');
+
